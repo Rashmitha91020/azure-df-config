@@ -1,0 +1,9 @@
+{
+	"name": "rashdfdemo11",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "0a7484f9-248e-40ec-b461-0b0335ec01e0",
+		"tenantId": "371b1943-9f9a-4bbd-8860-c65074b12a5c"
+	}
+}
