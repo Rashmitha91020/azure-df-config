@@ -7,6 +7,18 @@
 		},
 		"AzureBlobStorage11_connectionString": {
 			"value": ""
+		},
+		"AzureSqlDatabase1_password": {
+			"value": ""
+		},
+		"AzureSqlDatabase1_properties_typeProperties_server": {
+			"value": "projectpracticedemo.database.windows.net"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_database": {
+			"value": "ProjectDemoDb"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_userName": {
+			"value": "Projectdemo"
 		}
 	}
 }
