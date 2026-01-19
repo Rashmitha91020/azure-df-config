@@ -11,6 +11,9 @@
 		"AzureSqlDatabase1_password": {
 			"value": ""
 		},
+		"AzureSqlDatabase2_password": {
+			"value": ""
+		},
 		"AzureSqlDatabase1_properties_typeProperties_server": {
 			"value": "projectpracticedemo.database.windows.net"
 		},
@@ -18,6 +21,15 @@
 			"value": "ProjectDemoDb"
 		},
 		"AzureSqlDatabase1_properties_typeProperties_userName": {
+			"value": "Projectdemo"
+		},
+		"AzureSqlDatabase2_properties_typeProperties_server": {
+			"value": "projectpracticedemo.database.windows.net"
+		},
+		"AzureSqlDatabase2_properties_typeProperties_database": {
+			"value": "ProjectDemoDb"
+		},
+		"AzureSqlDatabase2_properties_typeProperties_userName": {
 			"value": "Projectdemo"
 		},
 		"containerUri": {
