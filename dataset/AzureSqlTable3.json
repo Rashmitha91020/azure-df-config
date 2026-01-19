@@ -1,5 +1,5 @@
 {
-	"name": "AzureSqlTable1",
+	"name": "AzureSqlTable3",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureSqlDatabase2",
@@ -9,50 +9,44 @@
 		"type": "AzureSqlTable",
 		"schema": [
 			{
-				"name": "Customer_ID",
+				"name": "employee_id",
 				"type": "int",
 				"precision": 10
 			},
 			{
-				"name": "First_Name",
+				"name": "first_name",
 				"type": "varchar"
 			},
 			{
-				"name": "Last_Name",
+				"name": "last_name",
 				"type": "varchar"
 			},
 			{
-				"name": "Email",
+				"name": "email",
 				"type": "varchar"
 			},
 			{
-				"name": "Phone_Number",
+				"name": "department",
 				"type": "varchar"
 			},
 			{
-				"name": "Address",
+				"name": "job_title",
 				"type": "varchar"
 			},
 			{
-				"name": "City",
-				"type": "varchar"
+				"name": "salary",
+				"type": "decimal",
+				"precision": 10,
+				"scale": 2
 			},
 			{
-				"name": "State",
-				"type": "varchar"
-			},
-			{
-				"name": "Country",
-				"type": "varchar"
-			},
-			{
-				"name": "Postal_Code",
-				"type": "varchar"
-			},
-			{
-				"name": "Created_Date",
+				"name": "hire_date",
 				"type": "date"
 			}
-		]
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Employee_Details"
+		}
 	}
 }
