@@ -44,13 +44,13 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "DelimitedText1",
+						"referenceName": "ADLSSourceLinkedService",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "AzureSqlTable4",
+						"referenceName": "AzureSqlTable2",
 						"type": "DatasetReference"
 					}
 				]
