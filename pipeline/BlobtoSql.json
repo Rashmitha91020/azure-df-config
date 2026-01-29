@@ -44,13 +44,13 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "ADLSSourceLinkedService",
+						"referenceName": "DelimitedText1",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "AzureSqlTable2",
+						"referenceName": "AzureSqlTable4",
 						"type": "DatasetReference"
 					}
 				]
@@ -96,6 +96,8 @@
 				}
 			}
 		],
-		"annotations": []
-	}
+		"annotations": [],
+		"lastPublishTime": "2026-01-19T18:27:49Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
 }
