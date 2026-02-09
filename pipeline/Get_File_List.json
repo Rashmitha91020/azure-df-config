@@ -17,16 +17,13 @@
 				"userProperties": [],
 				"typeProperties": {
 					"dataset": {
-						"referenceName": "Getmetadata",
+						"referenceName": "DelimitedText1",
 						"type": "DatasetReference"
 					},
-					"fieldList": [
-						"childItems",
-						"itemType",
-						"lastModified"
-					],
+					"fieldList": [],
 					"storeSettings": {
 						"type": "AzureBlobStorageReadSettings",
+						"recursive": true,
 						"enablePartitionDiscovery": false
 					},
 					"formatSettings": {
