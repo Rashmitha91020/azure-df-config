@@ -1,23 +1,7 @@
 {
-	"name": "PL_Copy_Wait_Message",
+	"name": "PL_Process_Latest_File",
 	"properties": {
 		"activities": [
-			{
-				"name": "Wait1",
-				"type": "Wait",
-				"dependsOn": [
-					{
-						"activity": "Copy data1",
-						"dependencyConditions": [
-							"Succeeded"
-						]
-					}
-				],
-				"userProperties": [],
-				"typeProperties": {
-					"waitTimeInSeconds": 5
-				}
-			},
 			{
 				"name": "Copy data1",
 				"type": "Copy",
@@ -35,7 +19,10 @@
 						"type": "DelimitedTextSource",
 						"storeSettings": {
 							"type": "AzureBlobFSReadSettings",
-							"recursive": true,
+							"maxConcurrentConnections": 1,
+							"recursive": false,
+							"modifiedDatetimeStart": "2026-02-09T00:00:00.000Z",
+							"modifiedDatetimeEnd": null,
 							"wildcardFileName": "*",
 							"enablePartitionDiscovery": false
 						},
@@ -76,40 +63,8 @@
 						"type": "DatasetReference"
 					}
 				]
-			},
-			{
-				"name": "Set variable1",
-				"type": "SetVariable",
-				"dependsOn": [
-					{
-						"activity": "Wait1",
-						"dependencyConditions": [
-							"Succeeded"
-						]
-					}
-				],
-				"policy": {
-					"secureOutput": false,
-					"secureInput": false
-				},
-				"userProperties": [],
-				"typeProperties": {
-					"variableName": "status_msg",
-					"value": {
-						"value": "statusMsg = Pipeline executed after 5 sec\r\n",
-						"type": "Expression"
-					}
-				}
 			}
 		],
-		"variables": {
-			"PL_Copy_Wait_Message": {
-				"type": "String"
-			},
-			"status_msg": {
-				"type": "String"
-			}
-		},
 		"annotations": []
 	}
 }
